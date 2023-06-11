@@ -1,4 +1,8 @@
-# Everything-About-DNS
+# Everything About DNS
+
+This repo aims to explain the basics of DNS at different levels of complexity for readers with various technical backgrounds. 
+
+# List of Contents
 
 - [What is DNS](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns)
   - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
