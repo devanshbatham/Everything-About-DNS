@@ -4,8 +4,10 @@
   - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
   - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
-- [Types of servers invloved in DNS resolution process]
-  - 
+- [Types of servers invloved in DNS resolution process](Types of Servers invloved in DNS resolution process)
+  - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-1)
+  - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
 
 # What is DNS
 
