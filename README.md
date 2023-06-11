@@ -4,6 +4,8 @@
   - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
   - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
+- [Types of servers invloved in DNS resolution process]
+  - 
 
 # What is DNS
 
@@ -52,4 +54,71 @@ DNS servers cache responses for performance, so subsequent requests for the same
 DNS uses a client-server model, with DNS resolvers acting as clients that query authoritative DNS servers to map domain names to IP addresses.
 
 Recursion and recursion queries allow higher-level DNS servers to recursively resolve names on behalf of clients, traversing down the DNS hierarchy until they reach an authoritative DNS server for that domain.
+
+
+# Types of servers invloved in DNS resolution process
+
+## Explain like I am five
+
+When you type a website name into your computer, your computer asks a special server called the "First Helper".   
+
+The First Helper doesn't actually know the number for the website, so it has to ask another server called the "Big Boss".  
+
+The Big Boss tells the First Helper if the website ends in .com, .net, or something else.  The Big Boss tells the First Helper to ask the .com server for .com websites.
+
+The First Helper then asks the .com server. The .com server doesn't know the Google website number, so it tells the First Helper to ask the "Google Boss" server.
+
+The Google Boss server actually knows Google's website number. It gives the number to the First Helper server, and the First Helper server gives the number to your computer so it can go to the Google website.
+
+In summary:
+
+1) Your computer asks the First Helper server   
+2) First Helper asks the Big Boss root server
+3) Big Boss tells First Helper to ask the .com server   
+4) .com server tells First Helper to ask the Google Boss server
+5) Google Boss server gives the website number to First Helper     
+6) First Helper gives the number to your computer
+
+Now your computer can use that website number to load the Google website!
+
+## Explain like I am Eleven
+
+When you type a website address like google.com into your computer, your computer first asks a DNS server to look up the IP address for that website. That first DNS server is called the recursive resolver.   
+
+But the recursive resolver itself doesn't actually know the IP address for google.com right away. So it has to ask another DNS server called the root server.
+
+The root server knows that google.com is part of the .com domain, so it tells the recursive resolver to ask the .com DNS server for the IP address.
+
+The recursive resolver then asks the .com DNS server. But again, the .com server only knows about all the .com domains in general, not the specific IP address for google.com. So it tells the recursive resolver to ask the authoritative nameserver for google.com.
+
+The authoritative nameserver for google.com actually has the IP address stored that points directly to Google's website servers. So it provides that IP address to the recursive resolver.
+
+Finally, the recursive resolver returns that IP address to your computer. Now your computer has the information it needs to connect directly to Google's website servers and load google.com in your browser.
+
+In short, 4 types of DNS servers work together to translate a website name into an IP address:
+
+1) The recursive resolver you first ask   
+2) The root server     
+3) The .com server
+4) The authoritative nameserver for that specific domain
+
+## Explain like I a college student
+
+
+1. DNS recursor - This is the first server that a DNS query is sent to. It could be your ISP's DNS server or a public DNS server like Google or Cloudflare DNS. The recursor's job is to make additional queries to resolve the original request from the client.
+
+2. Root nameserver - When the recursor cannot resolve the requested domain name itself, it queries one of the root nameservers. The root nameserver points the recursor to the top level domain (TLD) nameserver for the domain. 
+
+3. TLD nameserver - For example, the .com TLD nameserver for domains that end in .com. The TLD nameserver points the recursor to the authoritative nameserver for the specific domain name.
+
+4. Authoritative nameserver - This is the DNS server that actually has the DNS records and IP address for the requested domain name. It provides the IP address to the recursor so it can return it to the client and complete the DNS lookup.
+
+So in summary:
+
+1. Client requests domain name from recursor 
+2. Recursor queries root nameserver
+3. Root nameserver directs to TLD nameserver (.com, .net, etc)
+4. TLD nameserver directs to authoritative nameserver for that domain
+5. Authoritative nameserver returns IP address to recursor 
+6. Recursor returns IP address to client, completing the DNS lookup
 
