@@ -3,7 +3,7 @@
 - [What is DNS](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns)
   - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
-  - [Explain like I am a college student](Explain like I am a college student)
+  - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
 
 # What is DNS
 
