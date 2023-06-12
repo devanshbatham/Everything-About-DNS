@@ -20,7 +20,7 @@ This repo aims to explain the basics of DNS at different levels of complexity fo
   - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-3)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-3)
   - [Explain like I am College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-college-student)
-- [DNS Glossary]
+- [DNS Glossary](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns-glossary)
 
 # What is DNS
 
