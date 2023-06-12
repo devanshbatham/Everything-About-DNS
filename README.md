@@ -12,7 +12,10 @@ This repo aims to explain the basics of DNS at different levels of complexity fo
   - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-1)
   - [Explain like I am a College student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
-- [types of DNS queries]
+- [Types of DNS queries](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-dns-queries)
+  - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-2)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-2)
+  - [Explain like I am a College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student-1)
 
 # What is DNS
 
