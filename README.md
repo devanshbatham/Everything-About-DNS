@@ -20,6 +20,7 @@ This repo aims to explain the basics of DNS at different levels of complexity fo
   - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-3)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-3)
   - [Explain like I am College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-college-student)
+- [DNS Glossary]
 
 # What is DNS
 
@@ -278,4 +279,21 @@ The benefits of DNS caching include:
 However, cached records eventually time out based on their TTL. This ensures that DNS information remains up-to-date. Records may also be explicitly flushed from caches.
 
 In summary, DNS caching at multiple layers improves the efficiency, performance and scalability of the DNS system by speeding up repeat lookups and reducing load on upstream nameservers. The trade-off is that records may become stale, so TTL management and cache invalidation policies are important to consider.
+
+
+# DNS Glossary
+
+Term | Definition
+-|-
+Domain Name System (DNS)| The system that translates human readable domain names (like google.com) to IP addresses required by computers to locate resources on the internet.
+DNS Query| A request from a DNS client (like a web browser) to a DNS server to lookup a domain name. 
+Recursive DNS Query | A query where the client requests the DNS server to lookup and return the final IP address, potentially querying multiple upstream servers.
+Iterative DNS Query | A query where the client accepts referrals from the DNS server pointing to the next server in the lookup chain, and queries that server itself.  
+Authoritative DNS Server | A DNS server that contains the actual DNS records for a domain and can respond directly without forwarding the query.
+Recursive DNS Resolver | A DNS server that can resolve queries recursively by querying upstream nameservers until it finds the definitive answer or reaches the authoritative nameserver.
+DNS Record | Information stored in a DNS server, including: <br> - A records (maps domain to IP address)<br> - NS records (maps domain to nameservers)<br> - MX records (maps domain to mail servers) <br> - CNAME records (maps domain to an alias) <br> - PTR records (maps IP address to domain name)
+DNS Caching | Storing DNS records in caches to speed up future lookups of the same data. Caching occurs at browser, OS, resolver and nameserver levels.
+DNS TTL | Time To Live - An expiration time assigned to DNS records, determining how long they can be cached before refetching.  
+DNS Resolution | The process of translating a domain name into its corresponding IP address. involves querying nameservers in the DNS hierarchy. 
+Root DNS Servers | The authoritative DNS servers for the root zone (.) and act as a reference for the top-level domain (TLD) nameservers.
 
