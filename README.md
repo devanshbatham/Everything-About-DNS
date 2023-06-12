@@ -204,3 +204,74 @@ So in summary:
 - Non-recursive queries are served from cache and require no additional lookups.
 
 The type of query sent depends on the capabilities of the client and the information available in DNS servers' caches.
+
+# What is DNS caching? Where does DNS caching occur?
+
+## Explain like I am Five
+
+You know how sometimes Mom or Dad can tell you the answer to a question right away, but other times they have to stop and think or go look something up first?  
+
+Well, for the answers they know right away, that means they already had the answer stored in their brain. They "cached" that information in their memory from last time you asked or they learned it.
+
+When computers need to find website addresses, they have to go ask special servers on the Internet. But those servers can "cache" the answers too, so next time the same question is asked they have the answer ready instantly.
+
+Your computer, your internet box, and the special DNS servers on the internet all cache DNS information:
+
+• Your computer caches website addresses so if you go to the same website again soon, it knows the answer right away.
+
+• Your internet box caches answers for all the devices using it. That means answers are super fast for anyone using that internet box.
+
+• The special DNS servers cache answers too. The more servers that have cached an answer, the faster it will be for anyone asking that question.
+
+Just like how Mom and Dad can forget answers after a while, cached DNS information expires after a set period of time. That's so the website addresses stay up to date. Then the next time that website is looked up, a full DNS lookup has to happen again.
+
+So in short, DNS caching is just like how you cache answers in your brain. Storing information means you can remember and access it faster next time!
+
+## Explain like I am Eleven
+
+Remember when we learned about search engines and how they crawl and index websites to store information so searching is fast? DNS caching works a bit like that.
+
+When you type a website address into your browser, your computer has to figure out the actual IP address of the website to connect to it. It does this by asking a DNS server. 
+
+But DNS servers can "cache" the answers to DNS lookups. This means that when the same question is asked again soon, the DNS server already knows the answer and can give a fast response without having to look it up again.
+
+Caching occurs at several levels:
+
+• Your computer caches DNS answers so if you visit the same website again in the next hour or day, it can give you the IP address right away from its cache. This means the website loads faster.
+
+• Your router caches DNS answers for all the devices connected to it. So if anyone using that router visits a website, the router can often provide the IP address from its cache.
+
+• DNS servers on the Internet cache answers too. The more DNS servers that cache an answer, the faster it will be for anyone looking up that website address.
+
+But just like information in a search index gets outdated, cached DNS information eventually expires. This keeps the website addresses up to date. Then the next time that website is looked up, a full DNS lookup has to happen again to get the most recent  IP address.
+
+In summary, DNS caching is a lot like how search engines store information - it speeds up future lookups of information you've already found once. The more places that cache the information, the faster future lookups will be.
+
+So the next time a website loads really fast for you, remember that DNS caching is probably helping out behind the scenes!
+
+## Explain like I am College Student
+
+DNS caching is a technique used to improve DNS performance and efficiency by storing the results of recent DNS lookups in memory caches. When the same DNS query is received again, the result can be retrieved directly from the cache instead of querying the authoritative nameservers, thus reducing latency and bandwidth consumption. 
+
+Caching occurs at multiple levels in the DNS hierarchy:
+
+• Resolver caching -  DNS resolvers, which receive recursive queries from clients and query upstream nameservers, will typically cache responses to reduce the load on authoritative nameservers. The TTL value returned with the record determines how long the cache entry is valid.
+
+• Operating system caching - Many operating systems incorporate DNS caches to store results for processes running on that system. This reduces the number of queries to the resolver.
+
+• Browser caching - Web browsers also maintain their own DNS caches to speed up lookups for domains they have recently accessed.
+
+• Authoritative nameserver caching - Even authoritative nameservers may cache negative responses (no such domain exists) to optimize future lookups.
+
+The benefits of DNS caching include:
+
+• Faster response times - Answers can be retrieved directly from cache, skipping upstream queries.
+
+• Reduced load - Fewer queries are made to authoritative nameservers and resolvers.
+
+• Scalability - Caching distributes load across multiple caching layers, enabling the DNS system to scale for a larger number of requests.
+
+However, cached records eventually time out based on their TTL. This ensures that DNS information remains up-to-date. Records may also be explicitly flushed from caches.
+
+In summary, DNS caching at multiple layers improves the efficiency, performance and scalability of the DNS system by speeding up repeat lookups and reducing load on upstream nameservers. The trade-off is that records may become stale, so TTL management and cache invalidation policies are important to consider.
+
