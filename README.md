@@ -11,11 +11,15 @@ This repo aims to explain the basics of DNS at different levels of complexity fo
 - [Types of servers invloved in DNS resolution process](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-servers-invloved-in-dns-resolution-process-1)
   - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-1)
-  - [Explain like I am a College student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
+  - [Explain like I am a College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
 - [Types of DNS queries](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-dns-queries)
   - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-2)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-2)
   - [Explain like I am a College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student-1)
+- [What is DNS caching? Where does DNS caching occur?](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#what-is-dns-caching-where-does-dns-caching-occur)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-3)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-3)
+  - [Explain like I am College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-college-student)
 
 # What is DNS
 
