@@ -5,17 +5,18 @@ This repo aims to explain the basics of DNS at different levels of complexity fo
 # List of Contents
 
 - [What is DNS](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns)
-  - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
-  - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
+  - [Explain like I am a College student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
 - [Types of servers invloved in DNS resolution process](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-servers-invloved-in-dns-resolution-process-1)
-  - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
   - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-1)
-  - [Explain like I am a college student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
+  - [Explain like I am a College student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
+- [types of DNS queries]
 
 # What is DNS
 
-## Explain like I am five
+## Explain like I am Five
 
 Imagine the Internet is a big zoo. All the animals in the zoo have numbers like 1, 2, 3, 4 instead of names. When you want to see an animal, you have to remember its number and go find it. That would be hard to remember!
 
@@ -43,7 +44,7 @@ Your browser and computer each keep a small catalog of recently looked up addres
 
 In summary, DNS acts like the card catalog for the Internet. It converts website names that people can remember, like "google.com", into the IP addresses that computers need in order to actually locate and connect to websites. The DNS system of nameservers work together to translate names into IP addresses.
 
-## Explain like I am a college student
+## Explain like I am a College student
 
 The Domain Name System (DNS) is an internet service that translates human-readable domain names into the IP addresses needed for locating and routing devices on the internet.
 
@@ -64,7 +65,7 @@ Recursion and recursion queries allow higher-level DNS servers to recursively re
 
 # Types of servers invloved in DNS resolution process
 
-## Explain like I am five
+## Explain like I am Five
 
 When you type a website name into your computer, your computer asks a special server called the "First Helper".   
 
@@ -108,7 +109,7 @@ In short, 4 types of DNS servers work together to translate a website name into 
 3) The .com server
 4) The authoritative nameserver for that specific domain
 
-## Explain like I a college student
+## Explain like I a College student
 
 
 1. DNS recursor - This is the first server that a DNS query is sent to. It could be your ISP's DNS server or a public DNS server like Google or Cloudflare DNS. The recursor's job is to make additional queries to resolve the original request from the client.
@@ -128,3 +129,75 @@ So in summary:
 5. Authoritative nameserver returns IP address to recursor 
 6. Recursor returns IP address to client, completing the DNS lookup
 
+# Types of DNS queries
+
+## Explain like I am five
+
+When you ask your mom or dad for the number of a website, there are 3 ways they can help you:
+
+1. They can find the whole answer. This is a recursive query. 
+
+This means they will ask as many people as they need to, until they find the actual number for the website. Then they give you the full answer.
+
+2. They can tell you the name of the next person to ask. This is an iterative query.
+
+This means they don't know the full answer, but they know who you should ask next. So they tell you another person's name who might know, and then you have to go ask that person yourself. You keep asking people iteratively until someone gives you the full number.
+
+3. They already know the answer! This is a non-recursive query.
+
+This means they recently helped someone else find the same website number, so they just remembered the answer and can give it to you right away. No need to ask anyone else.
+
+In summary:
+
+Recursive queries mean someone finds the full answer for you.
+Iterative queries mean someone tells you who to ask next.
+Non-recursive queries mean someone remembers the recent answer.
+
+## Explain like I am Eleven
+
+When you type a website name into your browser, like google.com, your computer first needs to find the actual IP address for that website. That's where DNS comes in. DNS stands for Domain Name System, and it's basically a phonebook that translates names into numbers.
+
+There are three main types of DNS queries:
+
+1. Recursive queries - These are when your computer asks a DNS server to look up the IP address for you and give you the full answer. The DNS server will then have to query multiple other DNS servers until it finds the right answer and returns the IP address to your computer.
+
+2. Iterative queries - These are when your computer asks a DNS server and that server doesn't have the full answer. Instead, it gives your computer the information for another DNS server that might have the answer. Then your computer has to go query that next DNS server, and so on, until finally a DNS server gives your computer the full IP address. 
+
+3. Non-recursive queries - These happen when the DNS server your computer queries already knows the answer because it recently looked up that same website name. So it can give your computer the IP address right away, without having to query any other DNS servers.
+
+So in summary:
+
+- Recursive queries mean the DNS server finds the full IP address for you.
+- Iterative queries mean the DNS server points you to the next DNS server to ask. 
+- Non-recursive queries mean the DNS server already knows the IP address from its cache.
+
+The types of DNS queries help determine the most efficient way for your computer to get the information it needs to load a website.
+
+
+## Explain like I am a College Student
+
+1. Recursive queries:
+
+In a recursive query, the client (e.g. your computer) asks the DNS server to resolve the full domain name. The DNS server will then make additional queries to other DNS servers as needed, until it gets an authoritative response with the IP address. It will then return that full resolved response to the original client.
+
+Recursive queries are used when the client does not have the processing power or knowledge of DNS servers to resolve the domain name itself.
+
+2. Iterative queries:
+
+In an iterative query, the client only asks the DNS server it knows of. That DNS server will then give a "referral" response, pointing the client to the next DNS server it should query. The client then makes iterative queries, moving down the DNS server hierarchy until it gets an authoritative response. 
+
+Iterative queries are used when the client has the ability to make multiple queries, but not do full recursion itself.
+
+3. Non-recursive queries:
+
+A non-recursive query is when the DNS server that is queried already has the requested DNS record in its cache. It can then immediately respond to the query without needing to make any additional queries.
+
+Cached responses are the most efficient type of DNS query, since no additional network traffic is needed beyond the original query.
+
+So in summary:
+
+- Recursive queries are when a DNS server fully resolves the domain name on behalf of the client
+- Iterative queries involve the client iteratively querying DNS servers based on referrals  
+- Non-recursive queries are served from cache and require no additional lookups.
+
+The type of query sent depends on the capabilities of the client and the information available in DNS servers' caches.
