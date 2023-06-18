@@ -1,4 +1,4 @@
-# Everything About DNS
+# DNS Explained : Everything About DNS
 
 This repo aims to explain the basics of DNS at different levels of complexity for readers with various technical backgrounds. 
 
